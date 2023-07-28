@@ -63,6 +63,7 @@ add_compile_options(
 )
 
 # include after options have been defined
+add_subdirectory("external/llcm4")
 add_subdirectory("src/")
 
 # add the executable
