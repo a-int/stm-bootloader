@@ -1,6 +1,18 @@
 # stm-bootloader
 The Bootloader for the STM32F411 microcontroller written entirely using CMSIS and llcm4 library.
 
+# Bootloader features
+
+- The size of the bootloader < 4 KiB 
+- Written completely with CMSIS
+- easy to customize
+- FLASH protection
+- Communication is done via USART (USART2)
+- Load user firmware after a specific condition (button press, incoming command, etc.)
+- FLASH erasing
+- FLASH programming
+
+
 # Details
 The bootloader can boot into one user application right after specific condition (button press, incoming message, etc).
 The bootloader is located at the sector 0 of the internal FLASH memory of the STM32 with address space from 0x0800_0000 to 0x0800_3FFF.
