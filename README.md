@@ -30,7 +30,8 @@ Right after the flashing is done, microcontroller continues to operate and can b
  * if none of previous commands led to errors then you can try to compile library using the cmake template.
 	```
 	$ cd <path-of-this-repo>
-    $ git submodule update --init
+    	$ git submodule update --init
+ 	$ git submodule foreach git pull origin
 	$ mkdir build && cd build
 	$ cmake -Darm-toolchain-path=<path-to-arm-toolcahin> -DCMAKE_TOOLCHAIN_FILE=../arm-toolchain.cmake -DBUILD_EXAMPLES=OFF ..
 	$ cmake --build .
